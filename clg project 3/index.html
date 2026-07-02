@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Employee Attendance Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>AHS Company</h1>
+    <p>Employee Attendance Dashboard</p>
+</header>
+
+<div class="container">
+
+<div class="form-box">
+
+<h2>Employee Attendance Form</h2>
+
+<form id="attendanceForm">
+
+<input
+type="number"
+id="empId"
+placeholder="Employee ID"
+required>
+
+<input
+type="text"
+id="empName"
+placeholder="Employee Name"
+required>
+
+<input
+type="text"
+id="department"
+placeholder="Department"
+required>
+
+<input
+type="number"
+id="workingDays"
+placeholder="Working Days"
+required>
+
+<input
+type="number"
+id="presentDays"
+placeholder="Present Days"
+required>
+
+<input
+type="number"
+id="leaveDays"
+placeholder="Leave Days"
+required>
+
+<button type="submit">
+Submit
+</button>
+
+</form>
+
+</div>
+
+
+<div class="table-box">
+
+<h2>Attendance Report</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Department</th>
+
+<th>Working Days</th>
+
+<th>Present Days</th>
+
+<th>Leave Days</th>
+
+<th>Attendance %</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tableBody">
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
